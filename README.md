@@ -14,10 +14,6 @@ React micro-frontend application deployed on **Zephyr Cloud** using **Module Fed
 | Host App | https://kellysondias-outlook-com-18-host-zephyr-mf-demo-k-764f51c14-ze.zephyrcloud.app |
 | Remote App | https://kellysondias-outlook-com-8-remote-zephyr-mf-demo--336219d00-ze.zephyrcloud.app |
 
-## Architecture
-
-See [ARCHITECTURE.md](./ARCHITECTURE.md) for the full architecture breakdown, runtime flow diagram, and tech decisions.
-
 ## Project Structure
 
 ```
@@ -28,7 +24,6 @@ zephyr-mf-demo/
 ├── apps/
 │   ├── host/              # Shell app (consumes remote components)
 │   └── remote/            # Exposes Button and Counter via Module Federation
-├── ARCHITECTURE.md
 └── README.md
 ```
 
