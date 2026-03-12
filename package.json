@@ -3,8 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev:remote": "cd apps/remote && npm run dev",
+    "dev:host": "cd apps/host && npm run dev",
+    "build:remote": "cd apps/remote && npm run build",
+    "build:host": "cd apps/host && npm run build",
+    "build:all": "npm run build:remote && npm run build:host"
   },
   "keywords": [],
   "author": "",
