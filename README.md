@@ -1,6 +1,5 @@
 # Zephyr MF Demo
 
-![Deploy](https://github.com/kellysondias/zephyr-mf-demo/actions/workflows/deploy.yml/badge.svg)
 ![Zephyr Cloud](https://img.shields.io/badge/deployed%20on-Zephyr%20Cloud-646cff)
 ![Module Federation](https://img.shields.io/badge/Module%20Federation-enabled-blue)
 ![Vite](https://img.shields.io/badge/Vite-5-646cff?logo=vite)
@@ -12,8 +11,8 @@ React micro-frontend application deployed on **Zephyr Cloud** using **Module Fed
 
 | App | URL |
 |-----|-----|
-| Host App | [COLE_A_URL_DO_HOST_AQUI] |
-| Remote App | [COLE_A_URL_DO_REMOTE_AQUI] |
+| Host App | https://kellysondias-outlook-com-18-host-zephyr-mf-demo-k-764f51c14-ze.zephyrcloud.app |
+| Remote App | https://kellysondias-outlook-com-8-remote-zephyr-mf-demo--336219d00-ze.zephyrcloud.app |
 
 ## Architecture
 
