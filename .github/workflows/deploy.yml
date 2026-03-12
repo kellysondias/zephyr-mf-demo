@@ -1,0 +1,37 @@
+name: Deploy to Zephyr Cloud
+
+on:
+  push:
+    branches: [master]
+
+jobs:
+  deploy-remote:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Deploy Remote
+        working-directory: apps/remote
+        run: |
+          npm install
+          npm run build
+        env:
+          ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
+
+  deploy-host:
+    runs-on: ubuntu-latest
+    needs: deploy-remote
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Deploy Host
+        working-directory: apps/host
+        run: |
+          npm install
+          npm run build
+        env:
+          ZEPHYR_TOKEN: ${{ secrets.ZEPHYR_TOKEN }}
